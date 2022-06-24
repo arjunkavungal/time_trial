@@ -6,5 +6,4 @@ y = [0,1,2,3]
 reg = LinearRegression().fit(X, y)
 title = st.text_input('Movie title', '')
 title2 = st.text_input('a', '')
-reg.predict([[int(title), int(title2)]])
-st.write('The current movie title is', title)
+st.write('The current movie title is', reg.predict([[int(title), int(title2)]]))
